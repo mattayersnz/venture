@@ -1,6 +1,6 @@
 const maxims = [
   {
-    maximQuote: `"The future is inside those you serve"`,
+    maximQuote: `"Quote about an idea"`,
     maximText: "Description"
   }
 ]

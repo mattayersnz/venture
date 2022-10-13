@@ -1,21 +1,19 @@
 import styled from 'styled-components';
-import Audio from './Audio';
+import {Player} from 'react-simple-player';
 
 
 export default function Maxim({ maximQuote, maximText }) {
   return (
     <MaximContainer>
-      <Audio />
-      <TextContainer>
-        <MaximStatement>{maximQuote}</MaximStatement>
-        <MaximText>{maximText}</MaximText>
-      </TextContainer>
+      <MaximStatement>{maximQuote}</MaximStatement>
+      <MaximText>{maximText}</MaximText>
     </MaximContainer>
   );
 }
 
 const MaximContainer = styled.div`
   display: flex;
+  flex-direction: column;
   width: 80%;
   border-top: 1px solid #DCDCDC;
   justify-content: center;
@@ -23,12 +21,6 @@ const MaximContainer = styled.div`
   padding: 64px;
 `;
 
-const TextContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  padding-left: 92px;
-  align-items: right;
-`;
 
 const MaximStatement = styled.div`
   font-family: 'Yeseva One', cursive;
@@ -39,5 +31,4 @@ const MaximText = styled.div`
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   padding-top: 24px;
-  padding-left: 48px;
 `;

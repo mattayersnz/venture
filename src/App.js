@@ -9,7 +9,7 @@ export default function App() {
     <AppContainer>
       <Header />
       {maxims.map((item, i) => (
-            <Maxim key={i} maximQuote={item.maximQuote} maximText={item.maximText}/>
+            <Maxim key={i} maximQuote={item.maximQuote} maximText={item.maximText} />
       ))}
     </AppContainer>
   );
