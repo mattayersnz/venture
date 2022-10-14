@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import {Player} from 'react-simple-player';
 
 
 export default function Maxim({ maximQuote, maximText }) {
