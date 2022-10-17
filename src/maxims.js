@@ -1,22 +1,22 @@
 const maxims = [
   {
-    maximQuote: `"Quote about an idea"`,
+    maximQuote: `"Core Maxim"`,
     maximText: "Description"
   },
   {
-    maximQuote: `"Quote about an idea"`,
+    maximQuote: `"Core Maxim"`,
     maximText: "Description"
   },
   {
-    maximQuote: `"Quote about an idea"`,
+    maximQuote: `"Core Maxim"`,
     maximText: "Description"
   },
   {
-    maximQuote: `"Quote about an idea"`,
+    maximQuote: `"Core Maxim"`,
     maximText: "Description"
   },
   {
-    maximQuote: `"Quote about an idea"`,
+    maximQuote: `"Core Maxim"`,
     maximText: "Description"
   }
 ]
