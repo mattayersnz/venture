@@ -17,4 +17,7 @@ const HeaderContainer = styled.div`
   align-items: center;
   font-family: 'Yeseva One', cursive;
   font-size: 36px;
+  @media only screen and (max-width: 900px) {
+    font-size: 24px;
+  }
 `;

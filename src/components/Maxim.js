@@ -24,6 +24,9 @@ const MaximContainer = styled.div`
 const MaximStatement = styled.div`
   font-family: 'Yeseva One', cursive;
   font-size: 36px;
+  @media only screen and (max-width: 900px) {
+    font-size: 28px;
+  }
 `;
 
 const MaximText = styled.div`

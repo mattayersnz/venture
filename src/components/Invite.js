@@ -25,6 +25,10 @@ const InviteContainer = styled.div`
 const InviteStatement = styled.div`
   font-family: 'Yeseva One', cursive;
   font-size: 36px;
+  text-align: center;
+  @media only screen and (max-width: 900px) {
+    font-size: 28px;
+  }
 `;
 
 const InviteText = styled.div`
@@ -36,6 +40,7 @@ const InviteText = styled.div`
 const InviteButton = styled.button`
   font-family: 'Inter', sans-serif;
   font-size: 14px;
+  color: black;
   margin-top: 48px;
   padding: 14px;
   border: 1px solid grey;
