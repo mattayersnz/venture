@@ -1,5 +1,7 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import Header from './components/Header';
+import Question from './components/Question';
 import Maxim from './components/Maxim';
 import Invite from './components/Invite';
 import maxims from './maxims';
@@ -22,11 +24,21 @@ const app = initializeApp(firebaseConfig);
 
 
 export default function App() {
+
+  const [focal, setFocal] = useState('');
+  const [subsidiary, setSubsidiary] = useState('');
+
   return (
     <AppContainer>
       <Header />
+      <Question
+        focal={focal}
+        setFocal={setFocal}
+        subsidiary={subsidiary}
+        setSubsidiary={setSubsidiary}
+      />
       {maxims.map((item, i) => (
-            <Maxim key={i} maximQuote={item.maximQuote} maximText={item.maximText} />
+          <Maxim key={i} maximQuote={item.maximQuote} maximText={item.maximText} />
       ))}
       <Invite />
     </AppContainer>
