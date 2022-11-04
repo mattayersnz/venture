@@ -41,10 +41,9 @@ const Focal = styled.input`
   outline: none;
   font-family: 'Yeseva One', cursive;
   font-size: 36px;
-  width: 60%;
+  width: 40%;
   @media only screen and (max-width: 900px) {
     font-size: 24px;
-    width: 40%;
   }
   border: 0;
   border-bottom: 2px solid black;
@@ -57,10 +56,9 @@ const Subsidiary = styled.input`
   outline: none;
   font-family: 'Yeseva One', cursive;
   font-size: 36px;
-  width: 80%;
+  width: 60%;
   @media only screen and (max-width: 900px) {
     font-size: 24px;
-    width: 60%;
   }
   border: 0;
   border-bottom: 2px solid black;
