@@ -4,7 +4,6 @@ import Header from './components/Header';
 import Question from './components/Question';
 import Maxim from './components/Maxim';
 import Invite from './components/Invite';
-import maxims from './maxims';
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -28,6 +27,21 @@ export default function App() {
   const [focal, setFocal] = useState('');
   const [subsidiary, setSubsidiary] = useState('');
 
+  const maxims = [
+    {
+      maximQuote: `"Loving ${focal} is the first step truely knowing"`,
+      maximText: "Description"
+    },
+    {
+      maximQuote: `"You need to embody ${subsidiary} in order to know ${focal}"`,
+      maximText: "Description"
+    },
+    {
+      maximQuote: `"Learning to ${focal} can't be done just by gathering information"`,
+      maximText: "Description"
+    }
+  ]
+
   return (
     <AppContainer>
       <Header />
@@ -37,9 +51,9 @@ export default function App() {
         subsidiary={subsidiary}
         setSubsidiary={setSubsidiary}
       />
-      {maxims.map((item, i) => (
+      {(focal.length && subsidiary.length) ? maxims.map((item, i) => (
           <Maxim key={i} maximQuote={item.maximQuote} maximText={item.maximText} />
-      ))}
+      )) : null }
       <Invite />
     </AppContainer>
   );

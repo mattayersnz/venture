@@ -13,13 +13,13 @@ export default function Question({ focal, setFocal, subsidiary, setSubsidiary })
 
   return (
     <QuestionContainer>
-      <p>I'm exploring how to <Focal value={focal} onChange={handleFocalChange}/> with <Subsidiary value={subsidiary} onChange={handleSubsidiaryChange}/></p>
+      <p>I'm exploring <Focal value={focal} onChange={handleFocalChange}/> with <Subsidiary value={subsidiary} onChange={handleSubsidiaryChange}/></p>
     </QuestionContainer>
   );
 }
 
 const QuestionContainer = styled.div`
-  margin-top: -10%;
+  margin-top: -5%;
   margin-bottom: 10%;
   padding: 10%;
   border: none;
@@ -32,8 +32,8 @@ const QuestionContainer = styled.div`
   @media only screen and (max-width: 900px) {
     font-size: 24px;
   }
-  border: 2px solid black;
-  box-shadow: 5px 5px #888888;
+  border: 0.25px solid #DCDCDC;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   width: 60%;
 `;
 
@@ -41,12 +41,12 @@ const Focal = styled.input`
   outline: none;
   font-family: 'Yeseva One', cursive;
   font-size: 36px;
-  width: 40%;
+  width: 30%;
   @media only screen and (max-width: 900px) {
     font-size: 24px;
   }
   border: 0;
-  border-bottom: 2px solid black;
+  border-bottom: 0.25px solid #DCDCDC;
   background: -webkit-linear-gradient(200deg, #FFBF00 7.39%, #FF4F47 24.79%, #6A27BF 56.55%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -61,7 +61,7 @@ const Subsidiary = styled.input`
     font-size: 24px;
   }
   border: 0;
-  border-bottom: 2px solid black;
+  border-bottom: 0.25px solid #DCDCDC;
   margin-bottom: -10px;
   background: -webkit-linear-gradient(200deg, #FFBF00 7.39%, #FF4F47 24.79%, #6A27BF 56.55%);
   -webkit-background-clip: text;
