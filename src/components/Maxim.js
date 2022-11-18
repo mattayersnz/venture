@@ -24,6 +24,7 @@ const MaximContainer = styled.div`
 const MaximStatement = styled.div`
   font-family: 'Yeseva One', cursive;
   font-size: 36px;
+  text-align: center;
   @media only screen and (max-width: 900px) {
     font-size: 28px;
   }
@@ -32,5 +33,6 @@ const MaximStatement = styled.div`
 const MaximText = styled.div`
   font-family: 'Inter', sans-serif;
   font-size: 14px;
+  text-align: center;
   padding-top: 24px;
 `;

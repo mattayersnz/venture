@@ -13,7 +13,12 @@ export default function Question({ focal, setFocal, subsidiary, setSubsidiary })
 
   return (
     <QuestionContainer>
-      <p>I'm exploring <Focal value={focal} onChange={handleFocalChange}/> with <Subsidiary value={subsidiary} onChange={handleSubsidiaryChange}/></p>
+      <p>
+        I'm trying to figure out
+        <Focal value={focal} onChange={handleFocalChange}/>
+        and so far I've figured out
+        <Subsidiary value={subsidiary} onChange={handleSubsidiaryChange}/>
+      </p>
     </QuestionContainer>
   );
 }
@@ -42,6 +47,7 @@ const Focal = styled.input`
   font-family: 'Yeseva One', cursive;
   font-size: 36px;
   width: 30%;
+  margin: 0px 14px 0px 14px;
   @media only screen and (max-width: 900px) {
     font-size: 24px;
   }
@@ -56,7 +62,8 @@ const Subsidiary = styled.input`
   outline: none;
   font-family: 'Yeseva One', cursive;
   font-size: 36px;
-  width: 60%;
+  width: 40%;
+  margin: 0px 14px 0px 14px;
   @media only screen and (max-width: 900px) {
     font-size: 24px;
   }

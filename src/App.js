@@ -29,15 +29,15 @@ export default function App() {
 
   const maxims = [
     {
-      maximQuote: `"Loving ${focal} is the first step truely knowing"`,
+      maximQuote: `"To truely know ${focal} you need to love ${focal}."`,
       maximText: "Description"
     },
     {
-      maximQuote: `"You need to embody ${subsidiary} in order to know ${focal}"`,
+      maximQuote: `"You need to embody ${subsidiary} in order to know ${focal}."`,
       maximText: "Description"
     },
     {
-      maximQuote: `"Learning to ${focal} can't be done just by gathering information"`,
+      maximQuote: `"Learning ${focal} can't be done just by gathering information."`,
       maximText: "Description"
     }
   ]
