@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export default function Invite() {
   return (
     <InviteContainer>
-      <InviteStatement>Venture Invitation</InviteStatement>
+      <InviteStatement>Invitation</InviteStatement>
       <InviteText>Details to come...</InviteText>
       <InviteButton>Get in Touch</InviteButton>
     </InviteContainer>
@@ -15,7 +15,7 @@ const InviteContainer = styled.div`
   display: flex;
   flex-direction: column;
   height: 50vh;
-  width: 80%;
+  width: 70%;
   padding: 64px;
   border-top: 1px solid #DCDCDC;
   justify-content: center;
@@ -46,5 +46,10 @@ const InviteButton = styled.button`
   border: 1px solid grey;
   border-radius: 10px;
   background-color: white;
-  cursor: pointer;
+  &:hover {
+    color: white;
+    background-color: black;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    cursor: pointer;
+  }
 `;
