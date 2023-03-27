@@ -46,10 +46,14 @@ const InviteButton = styled.button`
   border: 1px solid grey;
   border-radius: 10px;
   background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+
   &:hover {
     color: white;
     background-color: black;
-    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
     cursor: pointer;
   }
 `;
+
