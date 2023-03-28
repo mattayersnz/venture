@@ -66,8 +66,6 @@ const Card = styled.div`
 `;
 
 
-
-
 const CardContent = ({ title, content }) => {
   return (
     <div>
