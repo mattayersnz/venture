@@ -55,6 +55,11 @@ const CardPageContainer = styled.div`
   left: 0;
   z-index: 1000;
   padding: 10%;
+
+  @media (max-width: 768px) {
+    padding: 10%;
+    width: 80vw;
+  }
 `;
 
 const CloseButton = styled.button`
@@ -74,12 +79,20 @@ const PracticesContainer = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 5%;
+  }
 `;
 
 const PracticesHeader = styled.div`
   font-family: 'Yeseva One', cursive;
   font-size: 32px;
   padding-bottom: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 const CardHeader = styled.div`
@@ -87,12 +100,20 @@ const CardHeader = styled.div`
   font-size: 32px;
   padding-bottom: 24px;
   color: #212121;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
 `;
 
 const CardContentStyle = styled.div`
   font-family: 'Inter', sans-serif;
   font-size: 12px;
   color: #212121;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 `;
 
 const PracticesGrid = () => {
@@ -112,10 +133,24 @@ const PracticesGrid = () => {
 const GridContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: auto;
   gap: 1rem;
   padding: 1rem;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 `;
+
+
 
 const Card = styled.div`
   border: 0.25px solid #DCDCDC;
