@@ -8,7 +8,7 @@ export default function Essay() {
       <EssayBody>
       Modernity, with its focus on information, can blind us to the beauty and wonder of the astounding world around us. To counter this while creating new ventures, we need a different way to think about what we know, something closer to how plumbers and carpenters make sense of what to do - things must line up. <br /><br />
 
-      We create from our embodied sense of what we know about the world, similar to riding a bike - a lived, skilled awareness. We can't just decide want to create by merely answering questions, but rather must provoke a deeper exploration of reality. Authoritative guides must be followed, committing to the tools, method and process of creating our venture. <br /><br />
+      We create from our embodied sense of what we know about the world, similar to riding a bike - a lived, skilled awareness. We can't just decide want to create by merely answering questions, but rather must provoke a deeper exploration of reality. Authoritative guides must be followed, committing to the tools, methods and journey of creating our venture. <br /><br />
 
       Embracing constraints, we can come to appreciate the beauty of a generous world in which we can be transformed, just as an artist appreciates the vibrancy of their canvas. Design in this sense submits to the constraints of the real, trusting that different parts will come together in ways we don't expect. <br /><br />
 
