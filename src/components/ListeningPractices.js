@@ -2,13 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { BrowserRouter as Router, Routes, Route, Link, useParams } from 'react-router-dom';
 
-export default function Practices() {
+export default function ListeningPractices() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={
           <PracticesContainer>
             <PracticesHeader>Listening Practices</PracticesHeader>
+            <PracticesDescription>These are some practices to help you listen to those you want to serve.</PracticesDescription>
             <PracticesGrid />
           </PracticesContainer>
         } />
@@ -70,16 +71,15 @@ const CloseButton = styled.button`
 `;
 
 const PracticesContainer = styled.div`
-  margin-top: -5%;
-  margin-bottom: 5%;
+  margin-top: -10%;
   padding: 10%;
+  padding-bottom: 10%;
   border: none;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-
   @media (max-width: 768px) {
     padding: 5%;
   }
@@ -89,30 +89,38 @@ const PracticesHeader = styled.div`
   font-family: 'Yeseva One', cursive;
   font-size: 32px;
   padding-bottom: 24px;
-
   @media (max-width: 768px) {
+    font-size: 24px;
+  }
+`;
+
+const PracticesDescription = styled.div`
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  padding-bottom: 14px;
+  @media only screen and (max-width: 900px) {
     font-size: 24px;
   }
 `;
 
 const CardHeader = styled.div`
   font-family: 'Yeseva One', cursive;
-  font-size: 32px;
+  font-size: 12px;
   padding-bottom: 24px;
   color: #212121;
-
   @media (max-width: 768px) {
-    font-size: 24px;
+    font-size: 12px;
   }
 `;
 
 const CardContentStyle = styled.div`
   font-family: 'Inter', sans-serif;
-  font-size: 12px;
+  font-size: 10px;
   color: #212121;
 
   @media (max-width: 768px) {
-    font-size: 12px;
+    font-size: 10px;
   }
 `;
 
@@ -155,16 +163,17 @@ const GridContainer = styled.div`
 const Card = styled.div`
   border: 0.25px solid #DCDCDC;
   padding: 0.5rem 2rem 2rem 2rem;
-  background-color: #FDFDFD;
+  background-color: #D28A87;
+  border-radius: 10px;
   transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
   font-family: 'Inter', sans-serif;
   text-decoration: none;
-  color: #212121;
+  color: white;
 
   &:hover {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     transform: translateY(-4px);
-    background-color: #FFFFFF;
+    background-color: #D28A87;
     cursor: pointer;
   }
 `;
@@ -179,7 +188,7 @@ const CardContent = ({ title, content }) => {
 };
 
 const cardContentData = [
-  { title: "Establishing Intent", content: "Clarify the reason for the conversations you want to have with people" },
+  { title: "Find Purpose", content: "Clarify the reason for the conversations you want to have with people" },
   { title: "Conversation Starters", content: "Explore different ways to start a meaningful conversation" },
   { title: "Structured Questions", content: "Structure questions to explore a particular experience someone has" },
   { title: "Noting Categories", content: "Take note the ways that people talk about the world" },
