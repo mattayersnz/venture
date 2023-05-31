@@ -38,6 +38,10 @@ const InviteText = styled.div`
   padding-top: 24px;
   text-align: center;
   width: 70%;
+  @media only screen and (max-width: 900px) {
+    font-size: 12px;
+    width: 100%;
+  }
 `;
 
 const InviteButton = styled.button`

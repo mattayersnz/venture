@@ -90,9 +90,9 @@ const PracticesHeader = styled.div`
   font-family: 'Yeseva One', cursive;
   font-size: 32px;
   padding-bottom: 24px;
-
   @media (max-width: 768px) {
     font-size: 24px;
+    padding-top: 24px;
   }
 `;
 
@@ -102,7 +102,9 @@ const PracticesDescription = styled.div`
   font-weight: 200;
   padding-bottom: 14px;
   @media only screen and (max-width: 900px) {
-    font-size: 24px;
+    font-size: 12px;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 `;
 
