@@ -17,7 +17,6 @@ const InviteContainer = styled.div`
   height: 50vh;
   width: 70%;
   padding: 64px;
-  border-top: 1px solid #DCDCDC;
   justify-content: center;
   align-items: center;
   color: #172743;

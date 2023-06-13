@@ -165,18 +165,15 @@ const GridContainer = styled.div`
 const Card = styled.div`
   border: 0.25px solid #DCDCDC;
   padding: 0.5rem 2rem 2rem 2rem;
-  background-color: #D28A87;
-  border-radius: 10px;
   transition: box-shadow 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   text-decoration: none;
-  color: white;
+  color: #212121;
 
   &:hover {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     transform: translateY(-4px);
-    background-color: #D28A87;
     cursor: pointer;
   }
 `;
