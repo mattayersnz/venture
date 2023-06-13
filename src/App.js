@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 import Header from './components/Header';
 import Essay from './components/Essay';
-import ListeningPractices from './components/ListeningPractices';
-import FramingPractices from './components/FramingPractices';
-import PrototypingPractices from './components/PrototypingPractices';
+// import ListeningPractices from './components/ListeningPractices';
+// import FramingPractices from './components/FramingPractices';
+// import PrototypingPractices from './components/PrototypingPractices';
+import Practices from './components/Practices';
 import Invite from './components/Invite';
 import { initializeApp } from "firebase/app";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -30,9 +31,7 @@ export default function App() {
     <AppContainer>
       <Header />
       <Essay />
-      <ListeningPractices />
-      <FramingPractices />
-      <PrototypingPractices />
+      <Practices />
       <Invite />
     </AppContainer>
   );

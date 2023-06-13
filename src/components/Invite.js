@@ -28,25 +28,25 @@ const InviteStatement = styled.div`
   font-size: 36px;
   text-align: center;
   @media only screen and (max-width: 900px) {
-    font-size: 28px;
+    font-size: 22px;
   }
 `;
 
 const InviteText = styled.div`
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   padding-top: 24px;
   text-align: center;
   width: 70%;
   @media only screen and (max-width: 900px) {
-    font-size: 12px;
+    font-size: 13px;
     width: 100%;
   }
 `;
 
 const InviteButton = styled.button`
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   color: white;
   margin-top: 48px;
   padding: 14px;
