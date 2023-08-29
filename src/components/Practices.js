@@ -150,7 +150,7 @@ const PracticesDescription = styled.div`
   font-weight: 200;
   padding-bottom: 14px;
   @media only screen and (max-width: 900px) {
-    font-size: 13px;
+    font-size: 14px;
     margin-left: 10%;
     margin-right: 10%;
   }
@@ -231,7 +231,7 @@ const CardBody = styled.h3`
   font-size: 16px;
   font-weight: 200;
   @media (max-width: 768px) {
-    font-size: 13px;
+    font-size: 14px;
   }
 `;
 

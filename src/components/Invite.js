@@ -38,7 +38,7 @@ const InviteText = styled.div`
   text-align: center;
   width: 70%;
   @media only screen and (max-width: 900px) {
-    font-size: 13px;
+    font-size: 14px;
     width: 100%;
   }
 `;

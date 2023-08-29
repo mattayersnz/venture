@@ -39,7 +39,7 @@ const EssayBody = styled.p`
   line-height: 42px;
   font-weight: 200;
   @media only screen and (max-width: 900px) {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 24px;
   }
 `;
