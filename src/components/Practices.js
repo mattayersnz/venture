@@ -113,6 +113,7 @@ const CardPageContent = styled.div`
 const CloseButton = styled.button`
   background-color: white;
   border: 1px solid #212121;
+  color: #212121;
   margin-top: 24px;
   margin-bottom: 48px;
   cursor: pointer;
